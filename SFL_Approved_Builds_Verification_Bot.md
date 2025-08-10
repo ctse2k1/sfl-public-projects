@@ -1,5 +1,5 @@
 
-# Architecture Design Document - SFL Approved Builds Verification Bot
+# System Design Document - SFL Approved Builds Verification Bot
 
 ## Project Goal
 Build a TypeScript Discord bot to manage guild event build approvals with:
