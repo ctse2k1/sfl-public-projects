@@ -28,24 +28,27 @@
 ## Integration Flow
 ```mermaid
 flowchart TD
-    subgraph EventSystem[Event AP]
+    subgraph EventSystem[Event-based AP System]
         BaseEvent[Base]
-        PvP[PvP]
-        PvE[PvE]
-        Social[Social]
+        GroupDungeonsEvent[Group Dungeons]
+        AvalonianDungeonsEvent[Avalonian Dungeons]
+        TrackingEvent[Tracking]
+        RoamingEvent[Roaming]
     end
 
-    subgraph MissionSystem[Mission AP]
+    subgraph MissionSystem[Mission-based AP System]
         BaseMission[Base]
-        Timed[Timed]
-        Role[Role]
-        Resource[Resource]
+        TransportMission[Transport]
+        FarmingMission[Farming]
+        GatheringMission[Gathering]
+        RefiningMission[Refining]
+        CraftingMission[Crafting]
     end
 
-    EventSystem --> APSystem[AP System]
+    EventSystem --> APSystem[Activity Points System]
     MissionSystem --> APSystem
-    APSystem --> Silver[Silver]
-    Manual[Manual] --> APSystem
+    APSystem --> SilverSystem[Silver Distribution System]
+    Manual[One Time Operation] --> APSystem
 ```
 
 ## Key Features
