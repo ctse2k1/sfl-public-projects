@@ -25,6 +25,8 @@
   - *Transport Missions*: AP for transport activities
   - *Farming Missions*: AP for farming activities
   - *Gathering Missions*: AP for gathering activities
+  - *Refining Missions*: AP for refining activities
+  - *Crafting Missions*: AP for crafting activities
 
 ## Integration Flow
 ```mermaid
