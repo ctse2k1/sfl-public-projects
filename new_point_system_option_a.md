@@ -1,3 +1,4 @@
+
 # Guild AP System Proposal - Option A
 
 ## Core Systems (Existing)
@@ -26,17 +27,25 @@
 
 ## Integration Flow
 ```mermaid
-flowchart LR
-    subgraph New Systems
-        A[Event-based AP System] -->|AP Data| C[AP System]
-        B[Mission-based AP System] -->|AP Data| C
-        A1[PvP Variant] --> A
-        A2[PvE Variant] --> A
-        B1[Timed Missions] --> B
-        B2[Role Missions] --> B
+flowchart TD
+    subgraph EventSystem[Event AP]
+        BaseEvent[Base]
+        PvP[PvP]
+        PvE[PvE]
+        Social[Social]
     end
-    C --> D[Silver Distribution System]
-    E[Manual AP Input] --> C
+
+    subgraph MissionSystem[Mission AP]
+        BaseMission[Base]
+        Timed[Timed]
+        Role[Role]
+        Resource[Resource]
+    end
+
+    EventSystem --> APSystem[AP System]
+    MissionSystem --> APSystem
+    APSystem --> Silver[Silver]
+    Manual[Manual] --> APSystem
 ```
 
 ## Key Features
