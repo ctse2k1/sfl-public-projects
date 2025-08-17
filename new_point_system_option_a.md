@@ -1,8 +1,8 @@
 
-# Guild AP System Proposal - Option A
+# New Point System Proposal - Option A
 
 ## Core Systems (Existing)
-### `AP System`
+### `Activity Points System`
 - **Role**: Central ledger for all AP (manual + automated)
 - **Key Features**:
   - Manual AP entries by admin (overrides/exceptional cases)
