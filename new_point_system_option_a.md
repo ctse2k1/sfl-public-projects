@@ -5,9 +5,9 @@
 ### `AP System`
 - **Role**: Central ledger for all AP (manual + automated)
 - **Key Features**:
-  - Manual AP entries by officers (overrides/exceptional cases)
+  - Manual AP entries by admin (overrides/exceptional cases)
   - AP reconciliation (fixes for errors from automated systems)
-  - Non-event AP tracking (social contributions, etc.)
+  - Non-event and Non-mission AP tracking (guild meetings, etc.)
 
 ### `Silver Distribution System`
 - Unchanged; pulls final AP totals weekly
@@ -15,15 +15,16 @@
 ## New Base Systems
 ### `Event-based AP System` *(Base)*
 - **Expansion**: Framework for event-type variants:
-  - *PvP Events*: AP rules for ZvZs, GvGs
-  - *PvE Events*: AP scaling for dungeons/HCEs
-  - *Social Events*: AP for community activities
+  - *Group Dungeons Events*: AP for group dungeons
+  - *Avalonian Dungeons Events*: AP for avalonian dungeons
+  - *Tracking Events*: AP for tracking activities
+  - *Roaming Events*: AP for roaming activities
 
 ### `Mission-based AP System` *(Base)*
 - **Expansion**: Framework for mission-type variants:
-  - *Timed Missions*: Urgency bonuses
-  - *Role Missions*: Tank/healer-specific rewards
-  - *Resource Missions*: Gathering quotas
+  - *Transport Missions*: AP for transport activities
+  - *Farming Missions*: AP for farming activities
+  - *Gathering Missions*: AP for gathering activities
 
 ## Integration Flow
 ```mermaid
@@ -53,5 +54,5 @@ flowchart TD
 
 ## Key Features
 - **Scalability**: Variants can be added/removed without disrupting core
-- **Consistency**: All paths funnel through `AP System`
-- **Officer Control**: Manual adjustments remain centralized
+- **Consistency**: All paths funnel through `Activity Points System`
+- **Admin Control**: Manual adjustments remain centralized
