@@ -6,14 +6,14 @@
 - **Role**: Manual AP tracking only (non-event/mission activities)
 - **Key Changes**:
   - No longer receives automated AP
-  - Converts manual AP → Silver (fixed rate)
+  - Converts AP in Silver
 
 ### `Silver Distribution System`
-- **New Role**: Aggregates Avocados + Bananas + Converted AP
+- **New Role**: Aggregates Converted Avocados + Converted Bananas + Converted AP
 
 ## New Currency Systems
 ### `Event-based Avocado System` *(Replaces Event-based AP)*
-- **Output**: Avocados (converted to Silver)
+- **Output**: Converted Avocados in Silver
 - **Variants (from Option A)**:
   - *Group Dungeons Events* → Avocados
   - *Avalonian Dungeons Events* → Avocados  
@@ -21,7 +21,7 @@
   - *Roaming Events* → Avocados
 
 ### `Mission-based Banana System` *(Replaces Mission-based AP)*
-- **Output**: Bananas (converted to Silver)
+- **Output**: Converted Bananas in Silver
 - **Variants (from Option A)**:
   - *Transport Missions* → Bananas
   - *Farming Missions* → Bananas
@@ -32,7 +32,7 @@
 ## Integration Flow
 ```mermaid
 flowchart TD
-    subgraph AvocadoSystem["Event-based Avocado System"]
+    subgraph AvocadoSystem["Event-based Avocado Sys"]
         direction TB
         A_Base[Base]
         A_Group[Group Dungeons]
@@ -41,7 +41,7 @@ flowchart TD
         A_Roam[Roaming]
     end
 
-    subgraph BananaSystem["Mission-based Banana System"]
+    subgraph BananaSystem["Mission-based Banana Sys"]
         direction TB
         B_Base[Base]
         B_Transport[Transport]
@@ -51,9 +51,9 @@ flowchart TD
         B_Craft[Crafting]
     end
 
-    AvocadoSystem -->|Avocados| Silver[Silver Distribution]
-    BananaSystem -->|Bananas| Silver
-    AP[Activity Points System] -->|Converted AP| Silver
+    AvocadoSystem -->|Converted Avocados in Silver| Silver[Silver Distribution]
+    BananaSystem -->|Converted Bananas in Silver| Silver
+    AP[Activity Points System] -->|Converted AP in Silver| Silver
     Admin[One Time Operation] --> AP
 
     classDef avocado fill:#e3f9d2,stroke:#333
@@ -64,6 +64,6 @@ flowchart TD
 - **Currency Conversion**: 
   - Events → Avocados → Silver
   - Missions → Bananas → Silver
-  - Manual AP → Silver
+  - Activity Points → Silver
 - **AP System**: Now handles **only** manual inputs
 - **Silver**: Unified payout currency
