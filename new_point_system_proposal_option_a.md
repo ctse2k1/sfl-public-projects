@@ -1,5 +1,5 @@
 
-# New Point System Proposal - Option A
+# New Point System Proposal - Option A (AP-Centric)
 
 ## Core Systems (Existing)
 ### `Activity Points System`
