@@ -14,7 +14,7 @@
 
 ## New Currency Systems
 ### `Event-based Avocado System` *(Replaces Event-based AP Sytem)*
-- **Output**: Converted Avocados in Silver
+- **Output**: Converted Avocados in AP
 - **Variants (from Option A)**:
   - *Group Dungeons Events* → Avocados
   - *Avalonian Dungeons Events* → Avocados  
@@ -22,7 +22,7 @@
   - *Roaming Events* → Avocados
 
 ### `Mission-based Banana System` *(Replaces Mission-based AP System)*
-- **Output**: Converted Bananas in Silver
+- **Output**: Converted Bananas in AP
 - **Variants (from Option A)**:
   - *Transport Missions* → Bananas
   - *Farming Missions* → Bananas
