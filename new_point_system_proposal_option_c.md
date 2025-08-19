@@ -1,5 +1,5 @@
 
-# New Point System Proposal - Option A (AP-Centric)
+# New Point System Proposal - Option A (AP-Centric with New Currency Systems)
 
 ## Core Systems (Existing)
 ### `Activity Points System`
@@ -12,21 +12,23 @@
 ### `Silver Distribution System`
 - Unchanged; pulls final AP totals weekly
 
-## New Base Systems
-### `Event-based AP System` *(Base)*
-- **Expansion**: Framework for event-type variants:
-  - *Group Dungeons Events*: AP for group dungeons
-  - *Avalonian Dungeons Events*: AP for avalonian dungeons
-  - *Tracking Events*: AP for tracking activities
-  - *Roaming Events*: AP for roaming activities
+## New Currency Systems
+### `Event-based Avocado System` *(Replaces Event-based AP Sytem)*
+- **Output**: Converted Avocados in Silver
+- **Variants (from Option A)**:
+  - *Group Dungeons Events* → Avocados
+  - *Avalonian Dungeons Events* → Avocados  
+  - *Tracking Events* → Avocados
+  - *Roaming Events* → Avocados
 
-### `Mission-based AP System` *(Base)*
-- **Expansion**: Framework for mission-type variants:
-  - *Transport Missions*: AP for transport activities
-  - *Farming Missions*: AP for farming activities
-  - *Gathering Missions*: AP for gathering activities
-  - *Refining Missions*: AP for refining activities
-  - *Crafting Missions*: AP for crafting activities
+### `Mission-based Banana System` *(Replaces Mission-based AP System)*
+- **Output**: Converted Bananas in Silver
+- **Variants (from Option A)**:
+  - *Transport Missions* → Bananas
+  - *Farming Missions* → Bananas
+  - *Gathering Missions* → Bananas
+  - *Refining Missions* → Bananas  
+  - *Crafting Missions* → Bananas
 
 ## Integration Flow
 ```mermaid
