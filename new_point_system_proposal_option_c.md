@@ -61,7 +61,7 @@ flowchart TD
     classDef banana fill:#fde2e2,stroke:#333
 ```
 
-## Key Features
-- **Scalability**: Variants can be added/removed without disrupting core
-- **Consistency**: All paths funnel through `Activity Points System`
-- **Admin Control**: Manual adjustments remain centralized
+## Key Differences from Option A
+- **Currency Conversion**: 
+  - Events → Avocados → AP
+  - Missions → Bananas → AP
