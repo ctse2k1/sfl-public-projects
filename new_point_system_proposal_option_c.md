@@ -33,27 +33,32 @@
 ## Integration Flow
 ```mermaid
 flowchart TD
-    subgraph EventSystem[Event-based AP System]
-        BaseEvent[Base]
-        GroupDungeonsEvent[Group Dungeons]
-        AvalonianDungeonsEvent[Avalonian Dungeons]
-        TrackingEvent[Tracking]
-        RoamingEvent[Roaming]
+    subgraph AvocadoSystem["Event-based Avocado Sys"]
+        direction TB
+        A_Base[Base]
+        A_Group[Group Dungeons]
+        A_Avalon[Avalonian Dungeons]
+        A_Track[Tracking]
+        A_Roam[Roaming]
     end
 
-    subgraph MissionSystem[Mission-based AP System]
-        BaseMission[Base]
-        TransportMission[Transport]
-        FarmingMission[Farming]
-        GatheringMission[Gathering]
-        RefiningMission[Refining]
-        CraftingMission[Crafting]
+    subgraph BananaSystem["Mission-based Banana Sys"]
+        direction TB
+        B_Base[Base]
+        B_Transport[Transport]
+        B_Farm[Farming]
+        B_Gather[Gathering]
+        B_Refine[Refining]
+        B_Craft[Crafting]
     end
 
-    EventSystem --> APSystem[Activity Points System]
-    MissionSystem --> APSystem
-    APSystem --> SilverSystem[Silver Distribution System]
-    Manual[One Time Operation] --> APSystem
+    AvocadoSystem -->|Converted Avocados in AP| AP[Activity Points System]
+    BananaSystem -->|Converted Bananas in AP| AP
+    AP -->|Converted AP in Silver| Silver[Silver Distribution]
+    Admin[One Time Operation] --> AP
+
+    classDef avocado fill:#e3f9d2,stroke:#333
+    classDef banana fill:#fde2e2,stroke:#333
 ```
 
 ## Key Features
